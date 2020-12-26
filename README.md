@@ -14,6 +14,4 @@ The master branch will contain the latest tutorial reference, but individual tut
 
 ## Overview Of Tutorials
 1. [Getting Started With AWS CDK](https://gefyra.co/getting-started-with-aws-cdk/) - No branch
-
-## CDK-T1: Preparing Your AWS CDK Framework
-You can follow the tutorial at [https://gefyra.co/preparing-your-aws-cdk-framework/](https://gefyra.co/preparing-your-aws-cdk-framework/)
+2. [Preparing Your AWS CDK Framework](https://gefyra.co/preparing-your-aws-cdk-framework/) - [CDK-T1](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/CDK-T1)
