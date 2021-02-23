@@ -21,6 +21,7 @@
     "typescript": "^3.9.9"
   },
   "dependencies": {
+    "@aws-cdk/aws-lambda": "^1.90.1",
     "@aws-cdk/aws-s3": "^1.90.1",
     "@aws-cdk/core": "^1.90.1",
     "source-map-support": "^0.5.16"
