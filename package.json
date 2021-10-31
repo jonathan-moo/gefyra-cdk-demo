@@ -18,7 +18,11 @@
     "jest": "^26.4.2",
     "ts-jest": "^26.5.1",
     "ts-node": "^8.1.0",
+<<<<<<< HEAD
     "typescript": "^3.9.9"
+=======
+    "typescript": "^3.9.7"
+>>>>>>> CDK-T2
   },
   "dependencies": {
     "@aws-cdk/aws-lambda": "^1.90.1",
