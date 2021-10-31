@@ -8,11 +8,12 @@ export class S3BucketStack extends cdk.Stack {
     super(scope, id, props);
 
     // The code that defines your stack goes here
-    this.bucket = new s3.Bucket(this, "gefyra-cdk-demo",{
+    this.bucket = new s3.Bucket(this, "gefyra-data-collection-dev",{
       versioned: false,
-      bucketName: "gefyra-cdk-demo",
+      bucketName: "gefyra-data-collection-dev",
       publicReadAccess: false,
-      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL
+      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
+      removalPolicy: cdk.RemovalPolicy.DESTROY
     });
   }
 }  
