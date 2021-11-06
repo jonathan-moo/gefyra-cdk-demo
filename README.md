@@ -17,6 +17,7 @@ The master branch will contain the latest tutorial reference, but individual tut
 2. [Preparing Your AWS CDK Framework](https://gefyra.co/preparing-your-aws-cdk-framework/) - [CDK-T1](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/CDK-T1)
 3. Creating An S3 Bucket With AWS CDK - [CDK-T2](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/CDK-T2)
 4. Creating A basic Lambda Function with AWS CDK - [CDK-T3](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/CDK-T3)
+5. Connecting S3 with Lambda on AWS CDK - [CDK-T4](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/CDK-T4)
 
 ## How To Deploy
 ### Basic Lambda: [CDK-T3](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/CDK-T3)

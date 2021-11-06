@@ -1,4 +1,12 @@
+import logging
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
 def lambda_handler(event, context):
+    # Outputs the incoming event into CW logs
+    logger.info(event)
+    
     return {
         "statusCode":200
     }
