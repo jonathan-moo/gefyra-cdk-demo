@@ -3,6 +3,7 @@ import * as s3 from "@aws-cdk/aws-s3";
 import * as s3n from '@aws-cdk/aws-s3-notifications';
 import * as lambda from '@aws-cdk/aws-lambda';
 
+// Allows the stack to receive a lambda.function object
 export interface S3Props extends cdk.StackProps{
   readonly lambdaFunction: lambda.Function;
 }
@@ -10,6 +11,7 @@ export interface S3Props extends cdk.StackProps{
 export class S3BucketStack extends cdk.Stack {
   public readonly bucket: s3.Bucket;
 
+  // Replace the props with our new interface
   constructor(scope: cdk.Construct, id: string, props: S3Props) {
     super(scope, id, props);
 
@@ -22,6 +24,7 @@ export class S3BucketStack extends cdk.Stack {
       removalPolicy: cdk.RemovalPolicy.DESTROY
     });
 
+    // Assigning notifications to be sent to the Lambda function
     this.bucket.addEventNotification(s3.EventType.OBJECT_CREATED, new s3n.LambdaDestination(props.lambdaFunction));
   }
 }  

@@ -12,7 +12,6 @@ const app = new cdk.App();
 const basic_lambda_stack = new basicLambdaStack(app, 'basicLambdaStack');
 
 // Creating an S3 bucket stack
-//const s3_bucket_stack = new S3BucketStack(app, 'gefyraS3Stack');
 const s3_bucket_stack = new S3BucketStack(app, 'gefyraS3Stack', {
   lambdaFunction: basic_lambda_stack.lambdaFunction
 });
