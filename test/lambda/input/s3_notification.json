@@ -1,0 +1,36 @@
+{
+	"Records": [{
+		"eventVersion": "2.1",
+		"eventSource": "aws:s3",
+		"awsRegion": "us-east-2",
+		"eventTime": "2021-11-06T17:31:10.306Z",
+		"eventName": "ObjectCreated:Put",
+		"userIdentity": {
+			"principalId": "A1YF9GMFBZ1SBP"
+		},
+		"requestParameters": {
+			"sourceIPAddress": "73.125.109.75"
+		},
+		"responseElements": {
+			"x-amz-request-id": "T6AYAQ4K28CMA0KE",
+			"x-amz-id-2": "NfqPD54sKXlUiZuuTiZzwjBQJDcKCi9XvUNKcoJlW0ttRt0MxjVwptcrvU6Cd5o5b27gCxjl4BCQZ56n4iJqUC2V0CEbO3G+"
+		},
+		"s3": {
+			"s3SchemaVersion": "1.0",
+			"configurationId": "ODc5N2JjYWMtMzY5My00NmM5LWIwZWUtMDMxMDM5YzBlNGE1",
+			"bucket": {
+				"name": "gefyra-data-collection-dev",
+				"ownerIdentity": {
+					"principalId": "A1YF9GMFBZ1SBP"
+				},
+				"arn": "arn:aws:s3:::gefyra-data-collection-dev"
+			},
+			"object": {
+				"key": "E0.csv",
+				"size": 175815,
+				"eTag": "f8a6fc6922c8108bbba96e5e59f53aaa",
+				"sequencer": "006186BBDE3EEF667E"
+			}
+		}
+	}]
+}

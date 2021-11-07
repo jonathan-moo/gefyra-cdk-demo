@@ -18,9 +18,20 @@ The master branch will contain the latest tutorial reference, but individual tut
 3. Creating An S3 Bucket With AWS CDK - [CDK-T2](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/CDK-T2)
 4. Creating A basic Lambda Function with AWS CDK - [CDK-T3](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/CDK-T3)
 5. Connecting S3 with Lambda on AWS CDK - [CDK-T4](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/CDK-T4)
+6. Simple Unit Test For AWS Lambda - [TEST-1](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/TEST-1)
 
 ## How To Deploy
 ### Basic Lambda: [CDK-T3](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/CDK-T3)
 1. Run: `npm run build && cdk synth`
 2. Run: `cdk deploy basicLambdaStack`
     * If you're running against with a customized profile, use: `cdk deploy <stack name> --profile <aws profile name>`
+
+## Unit Testing For Lambda
+### Simple Unit Test For AWS Lambda: [TEST-1](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/TEST-1)
+We use `pipenv` to isolate our python environment for our Lambda deployment.
+
+Run `coverage run -m pytest <test_script> --pylint` to test and to generate a test coverage report.
+
+Run `coverage report` to generate a summarized report.
+
+Run `coverage html` to generate visualization and breakdown of the test.

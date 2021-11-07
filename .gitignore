@@ -2,6 +2,12 @@
 !jest.config.js
 *.d.ts
 node_modules
+__pycache__
+.pytest_cache
+htmlcov/
+.vscode/
+.coverage
+.pylintrc
 
 # CDK asset staging directory
 .cdk.staging
