@@ -1,11 +1,12 @@
-import * as cdk from '@aws-cdk/core';
-import * as lambda from '@aws-cdk/aws-lambda';
+import * as cdk from 'aws-cdk-lib';
+import * as lambda from 'aws-cdk-lib/aws-lambda';
+import { Construct } from 'constructs';
 
 export class basicLambdaStack extends cdk.Stack{
   // Making the object accessible for reuseability
   public readonly lambdaFunction: lambda.Function;
 
-  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
     const function_name = 'gefyra-basic-lambda';

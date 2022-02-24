@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
-import * as cdk from '@aws-cdk/core';
+import * as cdk from 'aws-cdk-lib';
 //import { GefyraCdkDemoStack } from '../lib/gefyra-cdk-demo-stack';
 import { S3BucketStack } from '../lib/s3-bucket-stack';
 import { basicLambdaStack } from '../lib/basic-lambda-stack';

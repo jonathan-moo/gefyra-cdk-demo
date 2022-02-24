@@ -19,6 +19,7 @@ The master branch will contain the latest tutorial reference, but individual tut
 4. Creating A basic Lambda Function with AWS CDK - [CDK-T3](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/CDK-T3)
 5. Connecting S3 with Lambda on AWS CDK - [CDK-T4](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/CDK-T4)
 6. Simple Unit Test For AWS Lambda - [TEST-1](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/TEST-1)
+7. [How To Upgrade Your AWS CDK Stack To Version 2 In Typescript](https://gefyra.co/how-to-upgrade-your-aws-cdk-stack-to-version-2-in-typescript/) - [CDK-T5](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/CDK-T5)
 
 ## How To Deploy
 ### Basic Lambda: [CDK-T3](https://github.com/jonathan-moo/gefyra-cdk-demo/tree/CDK-T3)

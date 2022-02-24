@@ -1,5 +1,5 @@
-import { expect as expectCDK, matchTemplate, MatchStyle } from '@aws-cdk/assert';
-import * as cdk from '@aws-cdk/core';
+import { Template } from 'aws-cdk-lib/assertions';
+import * as cdk from 'aws-cdk-lib';
 import * as GefyraCdkDemo from '../lib/gefyra-cdk-demo-stack';
 
 test('Empty Stack', () => {
@@ -7,7 +7,11 @@ test('Empty Stack', () => {
     // WHEN
     const stack = new GefyraCdkDemo.GefyraCdkDemoStack(app, 'MyTestStack');
     // THEN
-    expectCDK(stack).to(matchTemplate({
-      "Resources": {}
-    }, MatchStyle.EXACT))
+    const template = Template.fromStack(stack);
+
+    // Testing AWS individual resources within the stack
+//   template.hasResourceProperties('AWS::SQS::Queue', {
+//     VisibilityTimeout: 300
+//   });
+
 });
